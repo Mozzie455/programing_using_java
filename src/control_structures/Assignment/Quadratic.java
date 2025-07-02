@@ -21,37 +21,38 @@ import java.util.Scanner;
  * x = (-b ± discriminant)/2a
  */
 public class Quadratic {
-public static void main(String[] args){
-    Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-    // value a, b and c
-    System.out.println("Enter the value of coefficient a: ");
-    double a = input.nextDouble();
-    System.out.println("Enter the value of coefficient b: ");
-    double b = input.nextDouble();
-    System.out.println("Enter the value of coefficient c: ");
-    double c = input.nextDouble();
+        // value a, b and c
+        System.out.println("Enter the value of coefficient a: ");
+        double a = input.nextDouble();
+        System.out.println("Enter the value of coefficient b: ");
+        double b = input.nextDouble();
+        System.out.println("Enter the value of coefficient c: ");
+        double c = input.nextDouble();
 
-    double root1, root2;
+        double root1, root2;
 
-    // calculate the discriminant (b**2 - 4ac)
-    double discriminant = b * b - 4 * a * c;
+        // calculate the discriminant (b**2 - 4ac)
+        double discriminant = b * b - 4 * a * c;
 
-    //check if the discriminant is greater than 0
-    if (discriminant > 0){
-        //Display the values of both the roots.
-        root1 = (-b + discriminant)/2 * a;
-        root2 = (-b - discriminant)/2 * a;
-        System.out.println("root1 = " + root1 + "and root2 = " + root2);
+        //check if the discriminant is greater than 0
+        if (discriminant > 0) {
+            //Display the values of both the roots.
+            root1 = (-b + discriminant) / 2 * a;
+            root2 = (-b - discriminant) / 2 * a;
+            System.out.println("root1 = " + root1 + "and root2 = " + root2);
 
-    //check if the discriminant is equal 0
-    } else if (discriminant == 0) {
-        root1 = root2 = -b /(2 * a);
-        System.out.println("The root is " + root1);
+        //check if the discriminant is equal 0
+        } else if (discriminant == 0) {
+            root1 = root2 = -b / (2 * a);
+            System.out.println("The root is " + root1);
 
-    //check if  the discriminant is less than 0
-    }else {
-        System.out.println("The equation has no real root2");
+        //check if  the discriminant is less than 0
+        } else {
+            System.out.println("The equation has no real root2");
+        }
+        input.close();
     }
-}
 }

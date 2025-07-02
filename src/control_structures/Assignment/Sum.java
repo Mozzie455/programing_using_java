@@ -19,5 +19,6 @@ public class Sum {
         }else{
             System.out.println((num1 + num2) * 2);
         }
+        input.close();
     }
 }
