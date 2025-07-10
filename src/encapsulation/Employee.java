@@ -58,25 +58,25 @@ public class Employee {
     }
 }
 
-class Tester {
-
-    public static void main(String[] args) {
-        // Creating object of Customer class
-        Employee employee = new Employee();
-
-        // Setting values of the instance variables using setter methods
-        employee.setEmployeeId("C101");
-        employee.setEmployeeName("Steve");
-        employee.setSalary(650);
-        employee.setJobLevel(4);
-
-        employee.calculateSalary();
-
-        // Displaying values of the instance variables using getter methods
-        System.out.println("Employee Details");
-        System.out.println("Employee Id: " + employee.getEmployeeId());
-        System.out.println("Employee Name: " + employee.getEmployeeName());
-        System.out.printf("Salary: %d", + employee.getSalary());
-
-    }
-}
+//class Tester {
+//
+//    public static void main(String[] args) {
+//        // Creating object of Customer class
+//        Employee employee = new Employee();
+//
+//        // Setting values of the instance variables using setter methods
+//        employee.setEmployeeId("C101");
+//        employee.setEmployeeName("Steve");
+//        employee.setSalary(650);
+//        employee.setJobLevel(4);
+//
+//        employee.calculateSalary();
+//
+//        // Displaying values of the instance variables using getter methods
+//        System.out.println("Employee Details");
+//        System.out.println("Employee Id: " + employee.getEmployeeId());
+//        System.out.println("Employee Name: " + employee.getEmployeeName());
+//        System.out.printf("Salary: %d", + employee.getSalary());
+//
+//    }
+//}
