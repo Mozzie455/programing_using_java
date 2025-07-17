@@ -5,11 +5,13 @@ public class Rectangle {
     public float width;
 
     public double calculateArea(){
-        return Math.round(length * width * 100.0)/100.0;
+        double area = length * width;
+        return Math.round(area * 100.0)/100.0;
     }
 
     public double calculatePerimeter(){
-        return Math.round((length + width) * 2 * 100.0)/100.0;
+        double perimeter = (length + width) * 2;
+        return Math.round(perimeter * 100.0)/100.0;
     }
 
 }
